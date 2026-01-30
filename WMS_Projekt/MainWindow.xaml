@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WMS_Projekt"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
 
-    </Grid>
+    <StackPanel>
+        <Label Content="Név"/>
+        <TextBlock Text="Kiss Anna"/>
+    </StackPanel>
 </Window>
