@@ -2,6 +2,6 @@
 {
     public class EmployeeNewModell
     {
-        
+        public string Name = "Nagy Hanna";
     }
 }
