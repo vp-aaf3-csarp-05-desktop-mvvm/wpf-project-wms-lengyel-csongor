@@ -9,11 +9,23 @@
     <Window.DataContext>
         <local:EmployeeViewModell/>
     </Window.DataContext>
-
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+    </Grid>
     <StackPanel Orientation="Vertical">
         <Label Content="Név :"/>
         <TextBlock Text="{Binding Name}"/>
+        <Label Content="Adószám :"/>
         <TextBlock Text="{Binding Adószám}"/>
+        <Label Content="Szabad napok :"/>
         <TextBlock Text="{Binding SzabadNapok}"/>
     </StackPanel>
 </Window>
