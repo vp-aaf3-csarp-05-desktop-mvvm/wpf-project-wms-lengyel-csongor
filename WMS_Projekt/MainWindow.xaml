@@ -12,6 +12,6 @@
 
     <StackPanel Orientation="Vertical">
         <Label Content="Név :"/>
-        <TextBlock Text="Kiss Anna"/>
+        <TextBlock Text="{Binding Name}"/>
     </StackPanel>
 </Window>
