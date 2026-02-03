@@ -1,6 +1,6 @@
 ﻿namespace WMS_Projekt
 {
-    public class EmployeeNewModell
+    public class EmployeeViewModell
     {
         public string Name = "Nagy Hanna";
     }

@@ -6,9 +6,12 @@
         xmlns:local="clr-namespace:WMS_Projekt"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:EmployeeViewModell/>
+    </Window.DataContext>
 
-    <StackPanel>
-        <Label Content="Név"/>
+    <StackPanel Orientation="Vertical">
+        <Label Content="Név :"/>
         <TextBlock Text="Kiss Anna"/>
     </StackPanel>
 </Window>
