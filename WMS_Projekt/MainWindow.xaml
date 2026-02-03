@@ -19,13 +19,13 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        
+        <Label Content="Név :" Grid.Column="0" Grid.Row="0"/>
+        <TextBlock Text="{Binding Name}" Grid.Column="1" Grid.Row="0"/>
+        <Label Content="Adószám :" Grid.Column="0" Grid.Row="1"/>
+        <TextBlock Text="{Binding Adószám}" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="Szabad napok :" Grid.Column="0" Grid.Row="2"/>
+        <TextBlock Text="{Binding SzabadNapok}" Grid.Column="1" Grid.Row="2"/>
+
     </Grid>
-    <StackPanel Orientation="Vertical">
-        <Label Content="Név :"/>
-        <TextBlock Text="{Binding Name}"/>
-        <Label Content="Adószám :"/>
-        <TextBlock Text="{Binding Adószám}"/>
-        <Label Content="Szabad napok :"/>
-        <TextBlock Text="{Binding SzabadNapok}"/>
-    </StackPanel>
 </Window>
