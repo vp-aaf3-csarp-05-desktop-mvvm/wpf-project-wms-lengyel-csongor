@@ -9,23 +9,28 @@
     <Window.DataContext>
         <local:EmployeeViewModell/>
     </Window.DataContext>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        
-        <Label Content="Név :" Grid.Column="0" Grid.Row="0"/>
-        <TextBlock Text="{Binding Name}" Grid.Column="1" Grid.Row="0"/>
-        <Label Content="Adószám :" Grid.Column="0" Grid.Row="1"/>
-        <TextBlock Text="{Binding TaxNumber}" Grid.Column="1" Grid.Row="1"/>
-        <Label Content="Szabad napok :" Grid.Column="0" Grid.Row="2"/>
-        <TextBlock Text="{Binding UsedDaysOff}" Grid.Column="1" Grid.Row="2"/>
+    <WrapPanel>
+        <Border BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="10" Padding="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
 
-    </Grid>
+            <Label Content="Név :" Grid.Column="0" Grid.Row="0" FontWeight="Bold"/>
+                <TextBlock Text="{Binding Name}" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" />
+                <Label Content="Adószám :" Grid.Column="0" Grid.Row="1" FontWeight="Bold"/>
+                <TextBlock Text="{Binding TaxNumber}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" />
+                <Label Content="Kivett szabad napok :" Margin="0 0 5 0" Grid.Column="0" Grid.Row="2" FontWeight="Bold"/>
+                <TextBlock Text="{Binding UsedDaysOff}" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center"/> 
+
+        </Grid>
+    </Border>
+    </WrapPanel>
+  
 </Window>
