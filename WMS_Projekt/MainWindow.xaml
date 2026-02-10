@@ -23,9 +23,9 @@
         <Label Content="Név :" Grid.Column="0" Grid.Row="0"/>
         <TextBlock Text="{Binding Name}" Grid.Column="1" Grid.Row="0"/>
         <Label Content="Adószám :" Grid.Column="0" Grid.Row="1"/>
-        <TextBlock Text="{Binding Adószám}" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock Text="{Binding TaxNumber}" Grid.Column="1" Grid.Row="1"/>
         <Label Content="Szabad napok :" Grid.Column="0" Grid.Row="2"/>
-        <TextBlock Text="{Binding SzabadNapok}" Grid.Column="1" Grid.Row="2"/>
+        <TextBlock Text="{Binding UsedDaysOff}" Grid.Column="1" Grid.Row="2"/>
 
     </Grid>
 </Window>
