@@ -5,7 +5,7 @@ namespace WMS_Projekt
     /// <summary>
     /// Dolgozó adatok megjelenítéshez (szabadnapkezelés)
     /// </summary>
-    public class EmployeeViewModell : ObservableObject 
+    public partial class EmployeeViewModell : ObservableObject 
     {
         /// <summary>
         /// Dolgozó neve
@@ -20,7 +20,8 @@ namespace WMS_Projekt
         /// <summary>
         /// Kivett szabadnapok száma
         /// </summary>
-        public int DaysOff { get;  } = 6;
+        [ObservableProperty]
+        private int daysOff;
 
         /// <summary>
         /// Szabadnapok száma
