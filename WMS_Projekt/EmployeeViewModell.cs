@@ -21,7 +21,8 @@ namespace WMS_Projekt
         /// Kivett szabadnapok száma
         /// </summary>
         [ObservableProperty]
-        private int daysOff;
+        [NotifyPropertyChangedFor(nameof(RemainingDays))]
+        private int daysOff = 8;
 
         /// <summary>
         /// Szabadnapok száma
