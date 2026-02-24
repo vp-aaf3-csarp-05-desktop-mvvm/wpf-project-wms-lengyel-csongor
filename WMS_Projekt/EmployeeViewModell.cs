@@ -8,14 +8,26 @@
         /// <summary>
         /// Dolgozó neve
         /// </summary>
-        public string Name { get; } = "Nagy Hanna";
+        public string Name { get; } = "Nagy Anna";
+
         /// <summary>
         /// Adószám
         /// </summary>
-        public string TaxNumber { get; } = "1112223334";
+        public string TaxNumber { get; } = "12345678-1-42";
+
         /// <summary>
         /// Kivett szabadnapok száma
         /// </summary>
-        public int UsedDaysOff { get; } = 3;
+        public int DaysOff { get;  } = 6;
+
+        /// <summary>
+        /// Szabadnapok száma
+        /// </summary>
+        private static int VacationDays = 45;
+
+        /// <summary>
+        /// Hátralévő szabadnapok száma
+        /// </summary>
+        public int RemainingDays => VacationDays - DaysOff;
     }
 }
