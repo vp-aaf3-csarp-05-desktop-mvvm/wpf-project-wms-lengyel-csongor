@@ -1,9 +1,11 @@
-﻿namespace WMS_Projekt
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+
+namespace WMS_Projekt
 {
     /// <summary>
     /// Dolgozó adatok megjelenítéshez (szabadnapkezelés)
     /// </summary>
-    public class EmployeeViewModell
+    public class EmployeeViewModell : ObservableObject 
     {
         /// <summary>
         /// Dolgozó neve
